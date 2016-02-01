@@ -17,6 +17,9 @@
 		3B093BD61C58664300560E44 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B093BD51C58664300560E44 /* CreateAccountRootViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3B093BD81C58686200560E44 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B093BD71C58686200560E44 /* SignInRootViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3B093BDA1C58689300560E44 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B093BD91C58689300560E44 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3BC111FE1C5EEC350052D527 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC111FD1C5EEC350052D527 /* TermsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3BC112001C5EEF6F0052D527 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC111FF1C5EEF6F0052D527 /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3BC112021C5EFAED0052D527 /* SignInTroubleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC112011C5EFAED0052D527 /* SignInTroubleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		3B093BD51C58664300560E44 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
 		3B093BD71C58686200560E44 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
 		3B093BD91C58689300560E44 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3BC111FD1C5EEC350052D527 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		3BC111FF1C5EEF6F0052D527 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3BC112011C5EFAED0052D527 /* SignInTroubleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTroubleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 				3B093BAF1C58590D00560E44 /* AppDelegate.swift */,
 				3B093BB11C58590D00560E44 /* ViewController.swift */,
 				3B093BB31C58590D00560E44 /* Main.storyboard */,
+				3BC112011C5EFAED0052D527 /* SignInTroubleViewController.swift */,
+				3BC111FF1C5EEF6F0052D527 /* SettingsViewController.swift */,
+				3BC111FD1C5EEC350052D527 /* TermsViewController.swift */,
 				3B093BD91C58689300560E44 /* SignInViewController.swift */,
 				3B093BD71C58686200560E44 /* SignInRootViewController.swift */,
 				3B093BD51C58664300560E44 /* CreateAccountRootViewController.swift */,
@@ -212,8 +221,11 @@
 				3B093BD61C58664300560E44 /* CreateAccountRootViewController.swift in Sources */,
 				3B093BDA1C58689300560E44 /* SignInViewController.swift in Sources */,
 				3B093BD41C5861B400560E44 /* CreateAccountViewController.swift in Sources */,
+				3BC112021C5EFAED0052D527 /* SignInTroubleViewController.swift in Sources */,
 				3B093BB21C58590D00560E44 /* ViewController.swift in Sources */,
 				3B093BB01C58590D00560E44 /* AppDelegate.swift in Sources */,
+				3BC111FE1C5EEC350052D527 /* TermsViewController.swift in Sources */,
+				3BC112001C5EEF6F0052D527 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +415,7 @@
 				3B093BCB1C58590D00560E44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B093BCC1C58590D00560E44 /* Build configuration list for PBXNativeTarget "DropboxishTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +424,7 @@
 				3B093BCE1C58590D00560E44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
