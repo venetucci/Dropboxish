@@ -141,6 +141,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create_account" id="MJa-Lp-lIr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lkK-5k-aPE">
                                 <rect key="frame" x="0.0" y="351" width="320" height="217"/>
@@ -149,12 +150,85 @@
                                     <segue destination="UhG-XO-uoZ" kind="modal" animates="NO" id="VJ4-9P-vQv"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" textAlignment="natural" minimumFontSize="17" id="UBN-Hd-NCm">
+                                <rect key="frame" x="112" y="130" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" id="3WM-sr-O7g">
+                                <rect key="frame" x="112" y="174" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" id="mvq-Rk-UK8">
+                                <rect key="frame" x="112" y="218" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onEditingChanged:" destination="TkT-fj-VjD" eventType="editingChanged" id="bNU-KG-04w"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" id="auH-ns-On1">
+                                <rect key="frame" x="0.0" y="341" width="320" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John" textAlignment="natural" minimumFontSize="17" id="xos-nr-TAB">
+                                <rect key="frame" x="112" y="85" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup_1" id="4qW-L7-9sg">
+                                <rect key="frame" x="0.0" y="256" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="signup_2" id="Iy2-V9-bCk">
+                                <rect key="frame" x="0.0" y="256" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="signup_3" id="E1b-se-Ra4">
+                                <rect key="frame" x="0.0" y="256" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="signup_4" id="Efm-sp-JGw">
+                                <rect key="frame" x="0.0" y="256" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0CH-1h-vkR" appends="YES" id="Q9G-lR-ihU"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="yzt-kI-GdL"/>
+                    <connections>
+                        <outlet property="passwordField" destination="mvq-Rk-UK8" id="GKX-NC-oWY"/>
+                        <outlet property="passwordFour" destination="Efm-sp-JGw" id="oYA-FA-b8E"/>
+                        <outlet property="passwordOne" destination="4qW-L7-9sg" id="SP2-iR-HLm"/>
+                        <outlet property="passwordThree" destination="E1b-se-Ra4" id="5O3-VI-hoC"/>
+                        <outlet property="passwordTwo" destination="Iy2-V9-bCk" id="On4-Z7-1tv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5RV-tf-to5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0CH-1h-vkR">
+                    <connections>
+                        <action selector="onTap:" destination="TkT-fj-VjD" id="z9p-2i-J2f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2205" y="358"/>
         </scene>
@@ -485,8 +559,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gF1-3U-WFo">
                                 <rect key="frame" x="66" y="195" width="186" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zyI-Up-ZqX">
+                                <rect key="frame" x="0.0" y="352" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="QYE-eQ-txK" kind="modal" animates="NO" id="Dit-ob-WZF"/>
+                                    <segue destination="22q-TJ-Tyd" kind="modal" animates="NO" id="UNx-pN-d66"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -497,6 +575,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpD-Ml-L6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2205" y="1080"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ezj-vO-QSk">
+            <objects>
+                <viewController id="22q-TJ-Tyd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ki-Fu-NIO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign_in2" id="i2H-Rr-G2F">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c7O-hA-q2k">
+                                <rect key="frame" x="67" y="195" width="186" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="QYE-eQ-txK" kind="modal" animates="NO" id="KDX-mt-pQ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WC4-J7-17d">
+                                <rect key="frame" x="242" y="20" width="78" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="JJ0-be-HSr" kind="modal" animates="NO" id="LdD-Vh-0g4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRP-dP-JFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2566" y="1079"/>
         </scene>
         <!--Sign In Trouble View Controller-->
         <scene sceneID="ehK-or-KuJ">
@@ -514,7 +626,7 @@
                                 <rect key="frame" x="7" y="516" width="305" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="Hoq-y8-UMI" kind="modal" animates="NO" id="EIk-zy-yv1"/>
+                                    <segue destination="22q-TJ-Tyd" kind="modal" animates="NO" id="CpQ-Jp-ois"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -523,7 +635,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Be2-nZ-yAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2615" y="1080"/>
+            <point key="canvasLocation" x="2929" y="1074"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iVm-gf-FRG">
@@ -679,15 +791,22 @@
         <image name="logged_out" width="320" height="568"/>
         <image name="settings" width="320" height="772"/>
         <image name="sign_in1" width="320" height="568"/>
+        <image name="sign_in2" width="320" height="568"/>
         <image name="sign_in3" width="320" height="568"/>
+        <image name="signup_1" width="320" height="39"/>
+        <image name="signup_2" width="320" height="39"/>
+        <image name="signup_3" width="320" height="39"/>
+        <image name="signup_4" width="320" height="39"/>
         <image name="terms" width="320" height="568"/>
         <image name="welcome1" width="320" height="568"/>
         <image name="welcome2" width="320" height="568"/>
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Nb-tx-vFv"/>
+        <segue reference="LdD-Vh-0g4"/>
+        <segue reference="CpQ-Jp-ois"/>
         <segue reference="JsT-1n-v8c"/>
-        <segue reference="EIk-zy-yv1"/>
+        <segue reference="PCi-bA-UuR"/>
+        <segue reference="7Nb-tx-vFv"/>
     </inferredMetricsTieBreakers>
 </document>

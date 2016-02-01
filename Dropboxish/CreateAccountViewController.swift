@@ -10,8 +10,16 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
 
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var passwordOne: UIImageView!
+    @IBOutlet weak var passwordTwo: UIImageView!
+    @IBOutlet weak var passwordThree: UIImageView!
+    @IBOutlet weak var passwordFour: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hideAllPasswords()
         
     }
 
@@ -32,5 +40,48 @@ class CreateAccountViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func hideAllPasswords() {
+        passwordOne.alpha = 0
+        passwordTwo.alpha = 0
+        passwordThree.alpha = 0
+        passwordFour.alpha = 0
+    }
+    
+    
+    @IBAction func onEditingChanged(sender: AnyObject) {
+        if let count = passwordField.text?.characters.count {
+            hideAllPasswords()
+            switch count {
+            case 0:
+                passwordOne.alpha = 0
+            case 1...2:
+                passwordOne.alpha = 1
+            case 3...4:
+                passwordTwo.alpha = 1
+            case 5...7:
+                passwordThree.alpha = 1
+            default:
+                passwordFour.alpha = 1
+            }
+            
+//            if count > 0 && count < 2 {
+//                passwordOne.alpha = 1
+//            } else if count >= 2 && count < 4 {
+//                passwordTwo.alpha = 1
+//            } else if count >= 4 && count < 6 {
+//                passwordThree.alpha = 1
+//            } else if count >= 6 && count < 8 {
+//                passwordFour.alpha = 1
+//            } else if count >= 8 {
+//                passwordFour.alpha = 1
+//            } else if count == 0 {
+//                passwordOne.alpha = 0
+//            }
+        }
+    }
 
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
 }
