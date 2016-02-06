@@ -24,7 +24,6 @@ class CreateAccountViewController: UIViewController {
         hideAllPasswords()
         createButton.enabled = false
         
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,8 +74,6 @@ class CreateAccountViewController: UIViewController {
             } else {
                 createButton.enabled = false
             }
-            
-            print("\(createButton.enabled)")
             
 //            if count > 0 && count < 2 {
 //                passwordOne.alpha = 1
