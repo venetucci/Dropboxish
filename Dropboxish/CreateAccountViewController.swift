@@ -16,10 +16,14 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var passwordThree: UIImageView!
     @IBOutlet weak var passwordFour: UIImageView!
     
+    @IBOutlet weak var createButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         hideAllPasswords()
+        createButton.enabled = false
+        
         
     }
 
@@ -49,6 +53,7 @@ class CreateAccountViewController: UIViewController {
     }
     
     
+    
     @IBAction func onEditingChanged(sender: AnyObject) {
         if let count = passwordField.text?.characters.count {
             hideAllPasswords()
@@ -64,6 +69,14 @@ class CreateAccountViewController: UIViewController {
             default:
                 passwordFour.alpha = 1
             }
+            
+            if count > 0 {
+                createButton.enabled = true
+            } else {
+                createButton.enabled = false
+            }
+            
+            print("\(createButton.enabled)")
             
 //            if count > 0 && count < 2 {
 //                passwordOne.alpha = 1
@@ -81,6 +94,9 @@ class CreateAccountViewController: UIViewController {
         }
     }
 
+    @IBAction func backButtonDidPress(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
