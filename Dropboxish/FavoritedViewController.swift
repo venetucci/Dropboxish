@@ -1,14 +1,14 @@
 //
-//  SignInViewController.swift
+//  FavoritedViewController.swift
 //  Dropboxish
 //
-//  Created by Michelle Harvey on 1/26/16.
+//  Created by Michelle Harvey on 2/6/16.
 //  Copyright © 2016 Michelle Venetucci Harvey. All rights reserved.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class FavoritedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +31,8 @@ class SignInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func backButtonDidPress(sender: AnyObject) {
-        navigationController!.popViewControllerAnimated(true)
-    }
 
+    @IBAction func buttonDidTap(sender: UIButton) {
+        sender.selected = !sender.selected
+    }
 }

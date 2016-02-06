@@ -17,6 +17,7 @@
 		3B093BD61C58664300560E44 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B093BD51C58664300560E44 /* CreateAccountRootViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3B093BD81C58686200560E44 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B093BD71C58686200560E44 /* SignInRootViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3B093BDA1C58689300560E44 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B093BD91C58689300560E44 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3B2CC9DF1C66AE1800103276 /* FavoritedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CC9DE1C66AE1800103276 /* FavoritedViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3B7D21BA1C668F7900F739C6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D21B91C668F7900F739C6 /* WelcomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3BC111FE1C5EEC350052D527 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC111FD1C5EEC350052D527 /* TermsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3BC112001C5EEF6F0052D527 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC111FF1C5EEF6F0052D527 /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -48,6 +49,7 @@
 		3B093BD51C58664300560E44 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
 		3B093BD71C58686200560E44 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
 		3B093BD91C58689300560E44 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3B2CC9DE1C66AE1800103276 /* FavoritedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritedViewController.swift; sourceTree = "<group>"; };
 		3B7D21B91C668F7900F739C6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3BC111FD1C5EEC350052D527 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		3BC111FF1C5EEF6F0052D527 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				3B093BAF1C58590D00560E44 /* AppDelegate.swift */,
 				3B093BB11C58590D00560E44 /* ViewController.swift */,
 				3B093BB31C58590D00560E44 /* Main.storyboard */,
+				3B2CC9DE1C66AE1800103276 /* FavoritedViewController.swift */,
 				3B7D21B91C668F7900F739C6 /* WelcomeViewController.swift */,
 				3BC112011C5EFAED0052D527 /* SignInTroubleViewController.swift */,
 				3BC111FF1C5EEF6F0052D527 /* SettingsViewController.swift */,
@@ -225,6 +228,7 @@
 				3B093BD61C58664300560E44 /* CreateAccountRootViewController.swift in Sources */,
 				3B093BDA1C58689300560E44 /* SignInViewController.swift in Sources */,
 				3B093BD41C5861B400560E44 /* CreateAccountViewController.swift in Sources */,
+				3B2CC9DF1C66AE1800103276 /* FavoritedViewController.swift in Sources */,
 				3BC112021C5EFAED0052D527 /* SignInTroubleViewController.swift in Sources */,
 				3B093BB21C58590D00560E44 /* ViewController.swift in Sources */,
 				3B093BB01C58590D00560E44 /* AppDelegate.swift in Sources */,

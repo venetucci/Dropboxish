@@ -8,14 +8,18 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        scrollView.delegate = self
+        pageControl.numberOfPages = 3
         
         let pageWidth = scrollView.bounds.width
         let pageHeight = scrollView.bounds.height
@@ -42,5 +46,14 @@ class WelcomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func pageControlDidPage(sender: AnyObject) {
+        let xOffset = scrollView.bounds.width * CGFloat(pageControl.currentPage)
+        scrollView.setContentOffset(CGPointMake(xOffset,0) , animated: true)
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.bounds.width)
+    }
 
 }
