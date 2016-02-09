@@ -10,8 +10,22 @@ import UIKit
 
 class FavoritedViewController: UIViewController {
 
+    @IBOutlet weak var favoritedButton: UIButton!
+    
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let favorited = userDefaults.boolForKey("user_favorited")
+        
+        favoritedButton.selected = favorited
+        
+//        if favorited {
+//            favoritedButton.selected = true
+//        } else {
+//            favoritedButton.selected = false
+//        }
 
         // Do any additional setup after loading the view.
     }
@@ -34,5 +48,10 @@ class FavoritedViewController: UIViewController {
 
     @IBAction func buttonDidTap(sender: UIButton) {
         sender.selected = !sender.selected
+        
+        userDefaults.setBool(sender.selected, forKey: "user_favorited")
+    
+        userDefaults.synchronize()
+
     }
 }
