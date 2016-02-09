@@ -82,7 +82,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logged_out" id="Lp2-NN-nhf">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o2o-yo-4uG" userLabel="signInButton">
                                 <rect key="frame" x="0.0" y="425" width="320" height="43"/>
@@ -325,7 +325,7 @@
         <!--Favorites-->
         <scene sceneID="ns8-9G-AiW">
             <objects>
-                <viewController id="d6d-gZ-gn1" sceneMemberID="viewController">
+                <viewController id="d6d-gZ-gn1" customClass="FavoritesViewController" customModule="Dropboxish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7wb-TT-BFC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,10 +334,18 @@
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="favorited" id="puU-WE-hvg">
+                                <rect key="frame" x="0.0" y="65" width="320" height="417"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="NMc-wL-b7Q"/>
+                    <connections>
+                        <outlet property="emptyImageView" destination="plc-eg-BcH" id="sxY-4p-BeA"/>
+                        <outlet property="favoritedImageView" destination="puU-WE-hvg" id="Xn6-zd-so7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eru-D9-snN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -426,6 +434,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="eVB-SP-Oot"/>
+                    <connections>
+                        <outlet property="favoritedButton" destination="BdC-8t-dk4" id="mnh-3X-bE4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2i1-Ke-eie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -609,7 +620,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cF-i2-5j3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="358"/>
+            <point key="canvasLocation" x="1443" y="358"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nTg-mM-Kjy">
@@ -741,8 +752,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="UNx-pN-d66"/>
         <segue reference="DnI-g5-a8g"/>
+        <segue reference="Hyz-8i-spN"/>
         <segue reference="mdb-Sa-lV4"/>
         <segue reference="LdD-Vh-0g4"/>
-        <segue reference="JsT-1n-v8c"/>
     </inferredMetricsTieBreakers>
 </document>
